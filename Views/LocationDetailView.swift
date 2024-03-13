@@ -51,7 +51,8 @@ extension LocationDetailView {
                 Image(imageName)
                     .resizable()
                     .scaledToFill()
-                    .frame(width: UIScreen.current?.bounds.width)
+                    .frame(width: UIDevice.current.userInterfaceIdiom == .pad
+                           ? nil : UIScreen.current?.bounds.width)
                     .clipped()
             }
         }
