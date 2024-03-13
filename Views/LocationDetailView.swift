@@ -16,8 +16,9 @@ struct LocationDetailView: View {
     var body: some View {
         ScrollView {
             VStack {
-                imageSection
-                    .shadow(color: .black.opacity(0.3), radius: 20, x: 0, y: 10)
+//                imageSection
+//                    .shadow(color: .black.opacity(0.3), radius: 20, x: 0, y: 10)
+                ImageWithParallaxEffect(location: location)
                 
                 VStack(alignment: .leading, spacing: 16) {
                     titleSection
